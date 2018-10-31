@@ -18,6 +18,11 @@
 
 @section('content')
 	<!-- About -->
+	<style>
+	.about_text_highlight,.about_text{
+		text-align: center !important;
+	}
+	</style>
 
 	<div class="about">
 		<div class="container">
@@ -28,6 +33,29 @@
 				</div>
 			</div>
 			<div class="row about_row row-eq-height">
+				<div class="col-lg-4">
+					<div class="text-center"><img src="{{url('/')}}/img/who-we-are.png" alt="" width="70%"></div>
+					<div class="about_text_highlight">WHO WE ARE</div>
+					<div class="about_text">
+						<p>MITHCARE is the bio information bank for everyone. We provide the highest level of quality healthcare. Which you can update and download your information anywhere & anytime.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="text-center"><img src="{{url('/')}}/img/what-we-do.png" alt="" width="70%"></div>
+					<div class="about_text_highlight">WHAT WE DO</div>
+					<div class="about_text">
+						<p>Our system will preserve your document for your future use. Your bio-information would be useful for your family members and new generation. The multi purpose such as bio data,check up update, treatment diagnosis, emergency case etc.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="text-center"><img src="{{url('/')}}/img/why-we-do.png" alt="" width="70%"></div>
+					<div class="about_text_highlight">WHY WE DO</div>
+					<div class="about_text">
+						<p>We know that your bio information would be helpful for treatment & therapy. It's also help your family members and next generation to forecast their symptom. In the emergency case a doctor could diagnose more precise/accuracy from your information.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row about_row row-eq-height d-none">
 				<div class="col-lg-4">
 					<div class="logo">
 						<a href="{{url('/')}}/theme-health/#">health<span>+</span></a>
@@ -90,7 +118,6 @@
 							<div class="milestone_counter" data-end-value="125">0</div>
 							<div class="milestone_text">Amazing Doctors</div>
 						</div>
-
 					</div>
 				</div>
 
@@ -104,9 +131,23 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
+	</div>
+
+	<div class="about" style="padding-top: 88px; padding-bottom: 93px;">
+		<div class="row">
+			<div class="col-md-4 offset-md-3">
+				<blockquote class="blockquote text-center">
+				  <p class="mt-5">Declare the past, diagnose the present, foretell the future</p>
+				  <footer class="blockquote-footer"><cite title="Source Title">HIPPOCRATES</cite></footer>
+				</blockquote>
+			</div>
+			<div class="col-md-2 text-center">
+				<img src="{{ url('/') }}/img/HIPPOCRATES.jpg" width="100%">
+			</div>
+		</div>
+
 	</div>
 
 	<!-- CTA -->
@@ -118,8 +159,8 @@
 				<div class="col">
 					<div class="cta_container d-flex flex-xl-row flex-column align-items-xl-start align-items-center justify-content-xl-start justify-content-center">
 						<div class="cta_content text-xl-left text-center">
-							<div class="cta_title">Make an appointment with one of our professional Doctors.</div>
-							<div class="cta_subtitle">Morbi arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas.</div>
+							<div class="cta_title">We care 7.7 billion world population estimated in 2019</div>
+							<div class="cta_subtitle">Make an appointment with one of our professional Doctors.</div>
 						</div>
 						<div class="button cta_button ml-xl-auto"><a href="{{url('/')}}/theme-health/#"><span>call now</span><span>call now</span></a></div>
 					</div>

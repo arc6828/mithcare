@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="{{url('/')}}/theme-health/styles/responsive.css">
 @endsection
 
-@section('title','Medical Services that you can trust')
+@section('title','MITHCARE FOR EVERYONE')
 
 @section('background_image')
 	<div class="background_image" style="background-image:url({{url('/')}}/theme-health/images/index_hero.jpg)"></div>
@@ -82,8 +82,8 @@
 				<div class="col">
 					<div class="cta_container d-flex flex-xl-row flex-column align-items-xl-start align-items-center justify-content-xl-start justify-content-center">
 						<div class="cta_content text-xl-left text-center">
-							<div class="cta_title">Make an appointment with one of our professional Doctors.</div>
-							<div class="cta_subtitle">Morbi arcu neque, scelerisque eget ligula ac, congue tempor felis. Integer tempor, eros a egestas.</div>
+							<div class="cta_title">We care 7.7 billion world population estimated in 2019</div>
+							<div class="cta_subtitle">Make an appointment with one of our professional Doctors.</div>
 						</div>
 						<div class="button cta_button ml-xl-auto"><a href="{{url('/')}}/theme-health/#"><span>call now</span><span>call now</span></a></div>
 					</div>

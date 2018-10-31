@@ -116,7 +116,7 @@
 						<div class="home_content">
 							<div class="home_title">@yield('title')</div>
                             @isset($is_root)
-                            <div class="home_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.</div>
+                            <div class="home_text">Medical Innovation & Technological Health CARE</div>
 							<div class="button home_button"><a href="{{url('/')}}/theme-health/#"><span>read more</span><span>read more</span></a></div>
                             @endisset
 						</div>
@@ -140,9 +140,13 @@
 					<div class="col-lg-3 footer_col">
 						<div class="footer_about">
 							<div class="logo">
-								<a href="{{url('/')}}/theme-health/#">health<span>+</span></a>
+								<a href="{{url('/')}}/theme-health/#">MITHCARE<span>+</span></a>
 							</div>
-							<div class="footer_about_text">Lorem ipsum dolor sit amet, lorem maximus consectetur adipiscing elit. Donec malesuada lorem maximus mauris.</div>
+							<div class="footer_about_text">82/25 CEMENT-THAI | CHATUCHAK | <br/>
+BANGKOK , THAILAND <br/>
+TEL: +66(0)95 556 5411 <br/>
+MOBILE: +66(0)86 977 7677 <br/>
+EMAIL: MITHCARE@GMAIL.COM</div>
 							<div class="footer_social">
 								<ul class="d-flex flex-row align-items-center justify-content-start">
 									<li><a href="{{url('/')}}/theme-health/#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
