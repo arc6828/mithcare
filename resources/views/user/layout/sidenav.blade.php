@@ -95,12 +95,20 @@
 
 
       <ul class="navbar-nav">
-
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/') }}/user">
             <i class="ni ni-tv-2 text-primary"></i> Dashboard
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/') }}/user/patient">
+            <i class="ni ni-single-02 text-yellow"></i> Patient
+          </a>
+        </li>
+      </ul>
+      <!-- Divider -->
+      <hr class="my-3">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" href="{{ url('/') }}/user/icons">
             <i class="ni ni-planet text-blue"></i> Icons

@@ -23,13 +23,28 @@ Route::get('/news', function () { return view('landing/news'); });
 Route::get('/services', function () { return view('landing/services'); });
 
 //ARGON ADMIN ocifetchstatement
-Route::get('user/', function () { return view('user/index'); });
-Route::get('user/icons', function () { return view('user/icons'); });
-Route::get('user/login', function () { return view('user/login'); });
-Route::get('user/maps', function () { return view('user/maps'); });
-Route::get('user/profile', function () { return view('user/profile'); });
-Route::get('user/register', function () { return view('user/register'); });
-Route::get('user/tables', function () { return view('user/tables'); });
+Route::middleware(['auth'])->group(function () {
+  Route::prefix('user')->group(function () {
+    // Matches The "/user/..." URL
+    Route::get('/', function () { return view('user/index'); });
+    Route::get('/icons', function () { return view('user/icons'); });
+    Route::get('/login', function () { return view('user/login'); });
+    Route::get('/maps', function () { return view('user/maps'); });
+    Route::get('/profile', function () { return view('user/profile'); });
+    Route::get('/register', function () { return view('user/register'); });
+    Route::get('/tables', function () { return view('user/tables'); });
+
+    Route::resource('/patient', 'PatientController');
+    Route::resource('/patient/{id}/treatment', 'TreatmentController');
+    Route::resource('/patient/{id}/prescription', 'PrescriptionController');
+  });
+  Route::prefix('api')->group(function () {
+    // Matches The "/api/..." URL
+    //Route::get('/patient', 'PatientController@api_index');
+  });
+
+});
+
 
 Auth::routes();
 

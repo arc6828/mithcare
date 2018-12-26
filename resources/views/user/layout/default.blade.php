@@ -16,6 +16,9 @@
   <link href="{{ url('/') }}/theme-argon/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
   <!-- Argon CSS -->
   <link type="text/css" href="{{ url('/') }}/theme-argon/assets/css/argon.css?v=1.0.0" rel="stylesheet">
+  <!-- Datatable CSS -->
+  <!--link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet"-->
+  <link type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -61,7 +64,11 @@
   <!-- Core -->
   <script src="{{ url('/') }}/theme-argon/assets/vendor/jquery/dist/jquery.min.js"></script>
   <script src="{{ url('/') }}/theme-argon/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Optional JS -->
+  <!-- Optional JS -->  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
+  <!--script src="https://code.jquery.com/jquery-3.3.1.js"></script-->
+  <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
   @yield('optional-js')
   <!-- Argon JS -->
   <script src="{{ url('/') }}/theme-argon/assets/js/argon.js?v=1.0.0"></script>

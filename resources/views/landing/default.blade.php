@@ -65,6 +65,7 @@
 												<li><a href="{{url('/')}}/theme-health/#">Help Desk</a></li>
 												<li><a href="{{url('/')}}/theme-health/#">Emergency Services</a></li>
 												<li><a href="{{url('/')}}/theme-health/#">Appointment</a></li>
+												<li><a href="{{url('/')}}/user">Data Center</a></li>
 											</ul>
 										</div>
 										<div class="header_top_phone">
