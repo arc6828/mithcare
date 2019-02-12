@@ -18,6 +18,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .btn-facebook{
+          color : white !important;
+          background-color: #4267b2 !important;
+          border-bottom: 1px solid #4267b2 !important;
+        }
+    </style>
 </head>
 <body>
     <div id="app">

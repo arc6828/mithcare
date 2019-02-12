@@ -62,6 +62,15 @@
                                 </a>
                             </div>
                         </div>
+                        <hr />
+                        <p class="text-center" style="margin:20px;">หรือเข้าสู่ระบบด้วย</p>
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                              <a href="{{url('/')}}/login/facebook" class="btn btn-primary btn-facebook">
+                                <i class="fa fa-facebook"></i> &nbsp; Login with Facebook
+                              </a>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

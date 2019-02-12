@@ -23,7 +23,7 @@ Route::get('/news', function () { return view('landing/news'); });
 Route::get('/services', function () { return view('landing/services'); });
 
 //ARGON ADMIN ocifetchstatement
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth','verified'])->group(function () {
   Route::prefix('user')->group(function () {
     // Matches The "/user/..." URL
     Route::get('/', function () { return view('user/index'); });
@@ -45,7 +45,11 @@ Route::middleware(['auth'])->group(function () {
 
 });
 
+Route::prefix('login')->group(function () {
+    Route::get('/{provider}', 'Auth\LoginController@redirectToProvider')->name('login.provider');
+    Route::get('/{provider}/callback', 'Auth\LoginController@handleProviderCallback')->name('login.provider.callback');
+});
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
