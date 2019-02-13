@@ -8,6 +8,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 @yield('link')
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+		.btn-facebook{
+			color : white !important;
+			background-color: #4267b2 !important;
+			border-bottom: 1px solid #4267b2 !important;
+		}
+</style>
 </head>
 <body>
 
@@ -28,16 +36,46 @@
 				<li class="menu_item"><a href="{{url('/')}}/services">Services</a></li>
 				<li class="menu_item"><a href="{{url('/')}}/news">News</a></li>
 				<li class="menu_item"><a href="{{url('/')}}/contact">Contact</a></li>
+				<hr />
+				<li class="menu_item"><a href="{{url('/')}}/theme-health/#">Help Desk</a></li>
+				<li class="menu_item"><a href="{{url('/')}}/theme-health/#">Emergency Services</a></li>
+				<li class="menu_item"><a href="{{url('/')}}/theme-health/#">Appointment</a></li>
+				<li class="menu_item"><a href="{{url('/')}}/user">Data Center</a></li>
+
+				@guest
+				<li class="menu_item">
+						<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+				</li>
+				@else
+				<li class="menu_item">
+						<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+								{{ Auth::user()->name }} <span class="caret"></span>
+						</a>
+
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="{{ route('logout') }}"
+									 onclick="event.preventDefault();
+																 document.getElementById('logout-form').submit();">
+										{{ __('Logout') }}
+								</a>
+
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+										@csrf
+								</form>
+						</div>
+				</li>
+				@endguest
+
 			</ul>
 		</div>
 		<div class="menu_social">
 			<ul>
-				<li><a href="{{url('/')}}/theme-health/#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-				<li><a href="{{url('/')}}/theme-health/#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-				<li><a href="{{url('/')}}/theme-health/#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-				<li><a href="{{url('/')}}/theme-health/#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-				<li><a href="{{url('/')}}/theme-health/#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-				<li><a href="{{url('/')}}/theme-health/#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a href="{{url('/')}}/theme-health/#"><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="{{url('/')}}/theme-health/#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="{{url('/')}}/theme-health/#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="{{url('/')}}/theme-health/#"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
+				<li><a href="{{url('/')}}/theme-health/#"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="{{url('/')}}/theme-health/#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -66,9 +104,33 @@
 												<li><a href="{{url('/')}}/theme-health/#">Emergency Services</a></li>
 												<li><a href="{{url('/')}}/theme-health/#">Appointment</a></li>
 												<li><a href="{{url('/')}}/user">Data Center</a></li>
+												<!-- Authentication Links -->
+												@guest
+												<li>
+														<a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+												</li>
+												@else
+												<li>
+														<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+																{{ Auth::user()->name }} <span class="caret"></span>
+														</a>
+
+														<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+																<a class="dropdown-item" href="{{ route('logout') }}"
+																	 onclick="event.preventDefault();
+																								 document.getElementById('logout-form').submit();">
+																		{{ __('Logout') }}
+																</a>
+
+																<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+																		@csrf
+																</form>
+														</div>
+												</li>
+												@endguest
 											</ul>
 										</div>
-										<div class="header_top_phone">
+										<div class="header_top_phone d-none">
 											<i class="fa fa-phone" aria-hidden="true"></i>
 											<span>+34 586 778 8892</span>
 										</div>
@@ -79,7 +141,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="header_nav" id="header_nav_pin">
+				<div class="header_nav_" id="header_nav_pin">
 					<div class="header_nav_inner">
 						<div class="header_nav_container">
 							<div class="container">
