@@ -27,7 +27,16 @@
   <div class="main-content">
     @include('user/layout/top-navbar')
 
-    @include('user/layout/header')
+    <!-- Header -->
+    <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+      <div class="container-fluid">
+        <div class="header-body">
+          <!-- Card stats -->
+          @yield('header')
+        </div>
+      </div>
+    </div>
+    
     <!-- Page content -->
     <div class="container-fluid mt--7">
       @yield('content')
@@ -64,7 +73,7 @@
   <!-- Core -->
   <script src="{{ url('/') }}/theme-argon/assets/vendor/jquery/dist/jquery.min.js"></script>
   <script src="{{ url('/') }}/theme-argon/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Optional JS -->  
+  <!-- Optional JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
   <!--script src="https://code.jquery.com/jquery-3.3.1.js"></script-->
   <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>

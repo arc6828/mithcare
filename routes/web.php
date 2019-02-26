@@ -16,12 +16,21 @@ Route::get('/welcome', function () {
 });
 //HEALTH THEME
 Route::get('/', function () { return view('landing/index',['is_root'=>true]); });
-Route::get('/about', function () { return view('landing/about'); });
-Route::get('/contact', function () { return view('landing/contact'); });
-Route::get('/elements', function () { return view('landing/elements'); });
-Route::get('/news', function () { return view('landing/news'); });
-Route::get('/services', function () { return view('landing/services'); });
+Route::get('/profile/{id}', function ($id) { return view('landing/show'); });
+Route::prefix('theme')->group(function () {
+    Route::get('/health', function () { return redirect('https://colorlib.com/preview/theme/health/'); });
+    Route::get('/argon/landing', function () { return redirect('https://demos.creative-tim.com/argon-design-system/'); });
+    Route::get('/argon/dashboard', function () { return redirect('https://demos.creative-tim.com/argon-dashboard/index.html'); });
+});
 
+Route::prefix('medical')->group(function () {
+    Route::get('/', function () { return view('medical/index',['is_root'=>true]); });
+    Route::get('/about', function () { return view('medical/about'); });
+    Route::get('/contact', function () { return view('medical/contact'); });
+    Route::get('/elements', function () { return view('medical/elements'); });
+    Route::get('/news', function () { return view('medical/news'); });
+    Route::get('/services', function () { return view('medical/services'); });
+});
 //ARGON ADMIN ocifetchstatement
 Route::middleware(['auth','verified'])->group(function () {
   Route::prefix('user')->group(function () {
@@ -30,7 +39,7 @@ Route::middleware(['auth','verified'])->group(function () {
     Route::get('/icons', function () { return view('user/icons'); });
     Route::get('/login', function () { return view('user/login'); });
     Route::get('/maps', function () { return view('user/maps'); });
-    Route::get('/profile', function () { return view('user/profile'); });
+    Route::get('/profile/{id?}', function ($id = 1) { return view('user/profile'); });
     Route::get('/register', function () { return view('user/register'); });
     Route::get('/tables', function () { return view('user/tables'); });
 

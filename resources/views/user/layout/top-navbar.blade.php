@@ -31,11 +31,11 @@
           <div class=" dropdown-header noti-title">
             <h6 class="text-overflow m-0">Welcome!</h6>
           </div>
-          <a href="{{ url('/') }}/theme-argon/examples/profile.html" class="dropdown-item">
+          <a href="{{ url('/') }}/profile/{{ Auth::user()->id }}" class="dropdown-item">
             <i class="ni ni-single-02"></i>
             <span>My profile</span>
           </a>
-          <a href="{{ url('/') }}/theme-argon/examples/profile.html" class="dropdown-item">
+          <a href="{{ url('/') }}/user/profile" class="dropdown-item">
             <i class="ni ni-settings-gear-65"></i>
             <span>Settings</span>
           </a>

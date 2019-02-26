@@ -6,9 +6,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Brand -->
-    <a class="navbar-brand pt-0" href="{{ url('/') }}/theme-argon/index.html">
+    <a class="navbar-brand pt-0" href="{{ url('/') }}">
       <img class="d-none" src="{{ url('/') }}/theme-argon/assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
-      <a href="http://localhost/mithcare/public/theme-health/#">MithCare<span>+</span></a>
+      <a href="{{ url('/') }}">MithCare<span>+</span></a>
 
     </a>
 

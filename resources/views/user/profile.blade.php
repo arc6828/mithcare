@@ -1,4 +1,83 @@
 @extends('user/layout/default')
+@section('header')
+<style>
+.progressbar {
+      counter-reset: step;
+  }
+  .progressbar li {
+      list-style-type: none;
+      width: 25%;
+      float: left;
+      font-size: 12px;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      color: #7d7d7d;
+  }
+  .progressbar li:before {
+      width: 30px;
+      height: 30px;
+      content: counter(step);
+      counter-increment: step;
+      line-height: 30px;
+      border: 2px solid #7d7d7d;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      background-color: white;
+  }
+  .progressbar li:after {
+      width: 100%;
+      height: 2px;
+      content: '';
+      position: absolute;
+      background-color: #7d7d7d;
+      top: 15px;
+      left: -50%;
+      z-index: -1;
+  }
+  .progressbar li:first-child:after {
+      content: none;
+  }
+  .progressbar li.active {
+      color: green;
+  }
+  .progressbar li.active:before {
+      border-color: #55b776;
+  }
+  .progressbar li.active + li:after {
+      background-color: #55b776;
+  }
+
+  .nav-fill .nav-item>a {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+  }
+</style>
+<div class="row pb-5">
+  <div class="col-md-12">
+    <div class="progress" style="height: 20px;">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <ul class="nav nav-pills nav-fill">
+      <li class="nav-item text-center">
+        <a class="nav-link active" href="#">1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">4</a>
+      </li>
+    </ul>
+  </div>
+</div>
+@endsection
 @section('content')
 <div class="row">
   <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
