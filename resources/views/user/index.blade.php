@@ -1,4 +1,7 @@
-@extends('user/layout/default')
+@extends('layouts/argon-dashboard/default')
+
+@section('title','Welcome')
+
 @section('content')
 <div class="row">
   <div class="col-xl-8 mb-5 mb-xl-0">

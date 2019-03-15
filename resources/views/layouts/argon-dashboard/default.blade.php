@@ -6,26 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>Argon Dashboard - Free Dashboard for Bootstrap 4</title>
+  <title>@yield('title')</title>
   <!-- Favicon -->
-  <link href="{{ url('/') }}/theme-argon/assets/img/brand/favicon.png" rel="icon" type="image/png">
+  <link href="{{ url('/') }}/argon-dashboard/assets/img/brand/favicon.png" rel="icon" type="image/png">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <!-- Icons -->
-  <link href="{{ url('/') }}/theme-argon/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
-  <link href="{{ url('/') }}/theme-argon/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="{{ url('/') }}/argon-dashboard/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+  <link href="{{ url('/') }}/argon-dashboard/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
   <!-- Argon CSS -->
-  <link type="text/css" href="{{ url('/') }}/theme-argon/assets/css/argon.css?v=1.0.0" rel="stylesheet">
+  <link type="text/css" href="{{ url('/') }}/argon-dashboard/assets/css/argon.css?v=1.0.0" rel="stylesheet">
   <!-- Datatable CSS -->
   <!--link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet"-->
   <link type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body>
-  @include('user/layout/sidenav')
+  @include('layouts/argon-dashboard/sidenav')
   <!-- Main content -->
   <div class="main-content">
-    @include('user/layout/top-navbar')
+    @include('layouts/argon-dashboard/top-navbar')
 
     <!-- Header -->
     <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- Page content -->
     <div class="container-fluid mt--7">
       @yield('content')
@@ -71,8 +71,8 @@
   </div>
   <!-- Argon Scripts -->
   <!-- Core -->
-  <script src="{{ url('/') }}/theme-argon/assets/vendor/jquery/dist/jquery.min.js"></script>
-  <script src="{{ url('/') }}/theme-argon/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url('/') }}/argon-dashboard/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="{{ url('/') }}/argon-dashboard/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- Optional JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script>
   <!--script src="https://code.jquery.com/jquery-3.3.1.js"></script-->
@@ -80,7 +80,7 @@
   <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
   @yield('optional-js')
   <!-- Argon JS -->
-  <script src="{{ url('/') }}/theme-argon/assets/js/argon.js?v=1.0.0"></script>
+  <script src="{{ url('/') }}/argon-dashboard/assets/js/argon.js?v=1.0.0"></script>
 
 
 </body>

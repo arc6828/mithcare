@@ -7,8 +7,8 @@
     </button>
     <!-- Brand -->
     <a class="navbar-brand pt-0" href="{{ url('/') }}">
-      <img class="d-none" src="{{ url('/') }}/theme-argon/assets/img/brand/blue.png" class="navbar-brand-img" alt="...">
-      <a href="{{ url('/') }}">MithCare<span>+</span></a>
+      <img class="" src="{{ url('/') }}/argon-dashboard/assets/img/brand/blue2.png" class="navbar-brand-img" alt="...">
+      
 
     </a>
 
@@ -29,7 +29,7 @@
         <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="media align-items-center">
             <span class="avatar avatar-sm rounded-circle">
-              <img alt="Image placeholder" src="{{ url('/') }}/theme-argon/assets/img/theme/team-1-800x800.jpg">
+              <img alt="Image placeholder" src="{{ url('/') }}/argon-dashboard/assets/img/theme/team-1-800x800.jpg">
             </span>
           </div>
         </a>
@@ -37,19 +37,19 @@
           <div class=" dropdown-header noti-title">
             <h6 class="text-overflow m-0">Welcome!</h6>
           </div>
-          <a href="{{ url('/') }}/theme-argon/examples/profile.html" class="dropdown-item">
+          <a href="{{ url('/') }}/argon-dashboard/examples/profile.html" class="dropdown-item">
             <i class="ni ni-single-02"></i>
             <span>My profile</span>
           </a>
-          <a href="{{ url('/') }}/theme-argon/examples/profile.html" class="dropdown-item">
+          <a href="{{ url('/') }}/argon-dashboard/examples/profile.html" class="dropdown-item">
             <i class="ni ni-settings-gear-65"></i>
             <span>Settings</span>
           </a>
-          <a href="{{ url('/') }}/theme-argon/examples/profile.html" class="dropdown-item">
+          <a href="{{ url('/') }}/argon-dashboard/examples/profile.html" class="dropdown-item">
             <i class="ni ni-calendar-grid-58"></i>
             <span>Activity</span>
           </a>
-          <a href="{{ url('/') }}/theme-argon/examples/profile.html" class="dropdown-item">
+          <a href="{{ url('/') }}/argon-dashboard/examples/profile.html" class="dropdown-item">
             <i class="ni ni-support-16"></i>
             <span>Support</span>
           </a>
@@ -67,8 +67,8 @@
       <div class="navbar-collapse-header d-md-none">
         <div class="row">
           <div class="col-6 collapse-brand">
-            <a href="{{ url('/') }}/theme-argon/index.html">
-              <img src="{{ url('/') }}/theme-argon/assets/img/brand/blue.png">
+            <a href="{{ url('/') }}/argon-dashboard/index.html">
+              <img src="{{ url('/') }}/argon-dashboard/assets/img/brand/blue2.png">
             </a>
           </div>
           <div class="col-6 collapse-close">
@@ -101,6 +101,11 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="{{ url('/') }}/user/profile">
+            <i class="ni ni-single-02 text-yellow"></i> Profile Settings
+          </a>
+        </li>
+        <li class="nav-item d-none">
           <a class="nav-link" href="{{ url('/') }}/user/patient">
             <i class="ni ni-single-02 text-yellow"></i> Patient
           </a>
@@ -108,7 +113,7 @@
       </ul>
       <!-- Divider -->
       <hr class="my-3">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav d-none">
         <li class="nav-item">
           <a class="nav-link active" href="{{ url('/') }}/user/icons">
             <i class="ni ni-planet text-blue"></i> Icons
@@ -140,8 +145,6 @@
           </a>
         </li>
       </ul>
-      <!-- Divider -->
-      <hr class="my-3">
       <!-- Heading -->
       <h6 class="navbar-heading text-muted">Documentation</h6>
       <!-- Navigation -->
