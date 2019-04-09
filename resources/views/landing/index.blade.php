@@ -20,9 +20,9 @@
           <div class="row">
             <div class="col-lg-6">
               <h1 class="display-3  text-white">Mithcare+
-                <span>Medical for everyone</span>
+                <span>Accessible to the effective treatments for everyone</span>
               </h1>
-              <p class="lead  text-white">The design system comes with four pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
+              <p class="lead  text-white d-none">The design system comes with four pre-built pages to help you get started faster. You can change the text and images and you're good to go.</p>
               <div class="btn-wrapper">
                 <a href="{{ url('/') }}/user" class="btn btn-info btn-icon mb-3 mb-sm-0">
                   <span class="btn-inner--icon"><i class="fa fa-code"></i></span>
@@ -55,9 +55,9 @@
               <div class="card card-lift--hover shadow border-0">
                 <div class="card-body py-5">
                   <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                    <i class="ni ni-check-bold"></i>
+                    <i class="ni ni-favourite-28"></i>
                   </div>
-                  <h6 class="text-primary text-uppercase">Download Argon</h6>
+                  <h6 class="text-primary text-uppercase">Fitness Free</h6>
                   <p class="description mt-3">Argon is a great free UI package based on Bootstrap 4 that includes the most important components and features.</p>
                   <div>
                     <span class="badge badge-pill badge-primary">design</span>
@@ -72,9 +72,9 @@
               <div class="card card-lift--hover shadow border-0">
                 <div class="card-body py-5">
                   <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
-                    <i class="ni ni-istanbul"></i>
+                    <i class="ni ni-world-2"></i>
                   </div>
-                  <h6 class="text-success text-uppercase">Build Something</h6>
+                  <h6 class="text-success text-uppercase">Health care community</h6>
                   <p class="description mt-3">Argon is a great free UI package based on Bootstrap 4 that includes the most important components and features.</p>
                   <div>
                     <span class="badge badge-pill badge-success">business</span>
@@ -89,9 +89,9 @@
               <div class="card card-lift--hover shadow border-0">
                 <div class="card-body py-5">
                   <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                    <i class="ni ni-planet"></i>
+                    <i class="ni ni-like-2"></i>
                   </div>
-                  <h6 class="text-warning text-uppercase">Prepare Launch</h6>
+                  <h6 class="text-warning text-uppercase">Insurance update</h6>
                   <p class="description mt-3">Argon is a great free UI package based on Bootstrap 4 that includes the most important components and features.</p>
                   <div>
                     <span class="badge badge-pill badge-warning">marketing</span>
