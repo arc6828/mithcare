@@ -8,7 +8,7 @@
     <!-- Brand -->
     <a class="navbar-brand pt-0" href="{{ url('/') }}">
       <img class="" src="{{ url('/') }}/argon-dashboard/assets/img/brand/blue2.png" class="navbar-brand-img" alt="...">
-      
+
 
     </a>
 
@@ -103,6 +103,16 @@
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/') }}/user/profile">
             <i class="ni ni-single-02 text-yellow"></i> Profile Settings
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/') }}/user/patients">
+            <i class="ni ni-single-02 text-yellow"></i> Patient
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/') }}/user/treatments">
+            <i class="ni ni-single-02 text-yellow"></i> Treatment
           </a>
         </li>
         <li class="nav-item d-none">

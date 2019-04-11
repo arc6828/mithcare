@@ -1,0 +1,32 @@
+{
+  "fields": [
+    {
+      "name": "patient_id",
+      "type": "integer#unsigned"
+    },
+    {
+      "name": "doctor_id",
+      "type": "integer#unsigned"
+    },
+    {
+      "name": "case_description",
+      "type": "text"
+    },
+    {
+      "name": "diagnose",
+      "type": "text"
+    },
+    {
+      "name": "prescription",
+      "type": "text"
+    },
+    {
+      "name": "date",
+      "type": "date"
+    },
+    {
+      "name": "remark",
+      "type": "text"
+    }
+  ]  
+}

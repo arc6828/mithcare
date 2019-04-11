@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "gender",
+      "type": "string"
+    },
+    {
+      "name": "blood_type",
+      "type": "string"
+    },
+    {
+      "name": "citizen_id",
+      "type": "string"
+    },
+    {
+      "name": "dob",
+      "type": "date"
+    },
+    {
+      "name": "address",
+      "type": "string"
+    },
+    {
+      "name": "phone",
+      "type": "string"
+    },
+    {
+      "name": "medical_condition",
+      "type": "text"
+    },
+    {
+      "name": "drug_allergy",
+      "type": "text"
+    },
+    {
+      "name": "image",
+      "type": "string"
+    }
+  ]
+}

@@ -43,9 +43,11 @@ Route::middleware(['auth','verified'])->group(function () {
     Route::get('/register', function () { return view('user/register'); });
     Route::get('/tables', function () { return view('user/tables'); });
 
-    Route::resource('/patient', 'PatientController');
-    Route::resource('/patient/{id}/treatment', 'TreatmentController');
-    Route::resource('/patient/{id}/prescription', 'PrescriptionController');
+    //Route::resource('/patient', 'PatientController');
+    //Route::resource('/patient/{id}/treatment', 'TreatmentController');
+    //Route::resource('/patient/{id}/prescription', 'PrescriptionController');
+
+
   });
   Route::prefix('api')->group(function () {
     // Matches The "/api/..." URL
@@ -62,3 +64,7 @@ Route::prefix('login')->group(function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('user/treatments', 'treatmentsController');
+
+Route::resource('user/patients', 'patientsController');

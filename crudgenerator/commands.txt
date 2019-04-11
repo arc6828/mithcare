@@ -1,0 +1,2 @@
+php artisan crud:generate treatments --fields_from_file="crudgenerator/treatments.json" --view-path=user  --route-group=user
+php artisan crud:generate patients --fields_from_file="crudgenerator/patients.json" --view-path=user  --route-group=user
