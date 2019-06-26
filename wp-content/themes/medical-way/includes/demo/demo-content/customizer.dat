@@ -1,0 +1,16 @@
+a:4:{s:8:"template";s:11:"medical-way";s:4:"mods";a:27:{i:0;b:0;s:18:"custom_css_post_id";i:377;s:13:"slider_status";s:4:"home";s:13:"slider_page_1";i:7;s:15:"slider_button_1";s:12:"Our Services";s:12:"slider_url_1";s:1:"#";s:13:"slider_page_2";i:10;s:15:"slider_button_2";s:15:"Our Departments";s:12:"slider_url_2";s:1:"#";s:11:"top_address";s:22:"Panipokhari, Kathmandu";s:9:"top_phone";s:13:"+977-44556677";s:7:"top_fax";s:13:"+977-44556677";s:18:"nav_menu_locations";a:3:{s:6:"social";i:9;s:3:"top";i:10;s:7:"primary";i:11;}s:9:"team_page";i:43;s:16:"departments_page";i:32;s:13:"services_page";i:18;s:16:"services_excerpt";i:15;s:13:"services_link";b:0;s:16:"departments_link";b:0;s:19:"departments_excerpt";i:15;s:12:"header_image";s:88:"https://promenadethemes.com/demo/medical-way/wp-content/uploads/2017/05/cropped-bg-2.png";s:17:"header_image_data";O:8:"stdClass":5:{s:13:"attachment_id";i:349;s:3:"url";s:88:"https://promenadethemes.com/demo/medical-way/wp-content/uploads/2017/05/cropped-bg-2.png";s:13:"thumbnail_url";s:88:"https://promenadethemes.com/demo/medical-way/wp-content/uploads/2017/05/cropped-bg-2.png";s:6:"height";i:374;s:5:"width";i:1920;}s:15:"breadcrumb_type";s:8:"image-bg";s:25:"breadcrumb_overlay_status";b:0;s:14:"excerpt_length";i:45;s:11:"posted_date";b:0;s:13:"slider_page_3";s:0:"";}s:7:"options";a:2:{s:9:"site_icon";s:3:"319";s:23:"nav_menus_created_posts";a:0:{}}s:6:"wp_css";s:271:".home .services-right form p {
+    clear: both;
+}
+
+.home .services-right textarea.wpcf7-textarea{
+	height: 125px;
+}
+
+.home .form-part.contact-right form p {
+    clear: both;
+}
+
+.home .form-part.contact-right textarea.wpcf7-textarea{
+	height: 135px;
+	padding: 10px 10px;
+}";}
