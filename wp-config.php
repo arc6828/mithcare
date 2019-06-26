@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'csincube_wmithcare' );
+define( 'DB_NAME', 'mithcare' );
 
 /** MySQL database username */
-define( 'DB_USER', 'csincube_wmithcare' );
+define( 'DB_USER', 'admin' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '123456' );
+define( 'DB_PASSWORD', 'f59d6e44b2f56bd5b90af51dc7ba645c28e0372c052430f4' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
@@ -88,3 +88,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once( ABSPATH . 'wp-settings.php' );
+
+
+define('RELOCATE',true);
